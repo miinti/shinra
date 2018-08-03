@@ -49,6 +49,11 @@ async def ping(ctx):
 async def roll(ctx):
     return await ctx.send(randint(0, 100))
 
+# work in progress, will pick a random multiplayer game from an array of games
+@bot.command()
+async def game(ctx):
+    await ctx.send("this command will help us pick a game easier...when it's ready.")
+
 # static text and embedded response commands
 @bot.command()
 async def hi(ctx):
@@ -62,11 +67,9 @@ async def tyler(ctx):
 async def rui(ctx):
     await ctx.send("let's run one dummy boy")
 
-
-
 @bot.command()
 async def info(ctx):
-    embed = discord.Embed(title="shinra", description="a simple bot for simple tasks. designed for private servers. this bot is a WIP.", color=0xe91e63)
+    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private servers. this bot is a WIP.", color=0xe91e63)
 
     embed.add_field(name="Author", value="Miinti#5774 (ty i.)")
     embed.add_field(name="Member of", value=f"{len(bot.guilds)} server(s).")
@@ -81,6 +84,7 @@ async def help(ctx):
     embed.add_field(name="-info", value="Shows some brief information about shinra.", inline=False)
     embed.add_field(name="-ping", value="Displays the latency between the API and the client. (I need to verify this.)")
     embed.add_field(name="-roll", value="Rolls a random whole number between 0 and 100.")
+    embed.add_field(name="-game", value="Picks a random multiplayer game to play. List will be regularly updated.")
     embed.add_field(name="...", value="...", inline=False)
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
