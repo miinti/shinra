@@ -60,7 +60,9 @@ async def tyler(ctx):
 
 @bot.command()
 async def rui(ctx):
-    await ctx.send("nerd")
+    await ctx.send("let's run one dummy boy")
+
+
 
 @bot.command()
 async def info(ctx):
@@ -78,6 +80,7 @@ async def help(ctx):
     embed.add_field(name="-help", value="Shows this message.", inline=False)
     embed.add_field(name="-info", value="Shows some brief information about shinra.", inline=False)
     embed.add_field(name="-ping", value="Displays the latency between the API and the client. (I need to verify this.)")
+    embed.add_field(name="-roll", value="Rolls a random whole number between 0 and 100.")
     embed.add_field(name="...", value="...", inline=False)
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
