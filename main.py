@@ -89,5 +89,7 @@ async def help(ctx):
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
 
-
-bot.run('NDcyMjIwMjM5NDc2Njg2ODU5.DkTYGg.Zk1qIm9SRs1C5f8OskXxukFNbGw')
+if __name__ == '__main__':
+    import config
+    bot.run(config.token)
+#bot.run('NDcyMjIwMjM5NDc2Njg2ODU5.DkTYGg.Zk1qIm9SRs1C5f8OskXxukFNbGw')
