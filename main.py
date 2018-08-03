@@ -2,11 +2,12 @@
 # created by Miinti#5774
 # some base code taken from boostlog and other sources.
 
+import config
+
 try:
     import discord
     from discord.ext import commands
     import atexit
-    import config
     import random
     from random import randint
 except:
@@ -15,6 +16,7 @@ except:
 
 bot = commands.Bot(command_prefix='-', description='shinra is a simple bot designed for private servers.')
 client = discord.Client()
+token = config.token
 
 # bot logon message in console
 @bot.event
@@ -90,4 +92,4 @@ async def help(ctx):
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
 
-bot.run(config.token)
+bot.run(token)
