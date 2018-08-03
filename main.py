@@ -6,6 +6,8 @@ try:
     import discord
     from discord.ext import commands
     import atexit
+    import random
+    from random import randint
 except:
     print("Please install the discord.py rewrite API.")
     exit(-1)
@@ -42,6 +44,10 @@ async def multiply(ctx, a: int, b: int):
 @bot.command()
 async def ping(ctx):
     return await ctx.send('Pong! {0} ms'.format(round(bot.latency, 1)))
+
+@bot.command()
+async def roll(ctx):
+    return await ctx.send(randint(0, 100))
 
 # static text and embedded response commands
 @bot.command()
