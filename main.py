@@ -66,7 +66,7 @@ async def rui(ctx):
 
 @bot.command()
 async def info(ctx):
-    embed = discord.Embed(title="shinra", description="a simple bot for simple tasks. designed for private servers. this bot is a WIP.", color=0xeee657)
+    embed = discord.Embed(title="shinra", description="a simple bot for simple tasks. designed for private servers. this bot is a WIP.", color=0xe91e63)
 
     embed.add_field(name="Author", value="Miinti#5774 (ty i.)")
     embed.add_field(name="Member of", value=f"{len(bot.guilds)} server(s).")
@@ -75,7 +75,7 @@ async def info(ctx):
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private servers.", color=0xeee657)
+    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private servers.", color=0x71368a)
 
     embed.add_field(name="-help", value="Shows this message.", inline=False)
     embed.add_field(name="-info", value="Shows some brief information about shinra.", inline=False)
