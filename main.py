@@ -67,7 +67,7 @@ async def tyler(ctx):
 
 @bot.command()
 async def rui(ctx):
-    await ctx.send("hey guys im really sorry for not asking for an invite back to the server. It was really immature of me to think i could be independent enough to play games on my own.")
+    await ctx.send("https://cdn.discordapp.com/attachments/247429693026861056/475437160833482762/434036_1.jpg")
 
 @bot.command()
 async def ryan(ctx):
@@ -76,6 +76,10 @@ async def ryan(ctx):
 @bot.command()
 async def wags(ctx):
     await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/439644280731205641/sasuke_v1.webm")
+
+@bot.command()
+async def luke(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 big booty god :ok_hand::weary:")
 
 @bot.command()
 async def info(ctx):
