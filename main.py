@@ -67,7 +67,15 @@ async def tyler(ctx):
 
 @bot.command()
 async def rui(ctx):
-    await ctx.send("let's run one dummy boy")
+    await ctx.send("hey guys im really sorry for not asking for an invite back to the server. It was really immature of me to think i could be independent enough to play games on my own.")
+
+@bot.command()
+async def ryan(ctx):
+    await ctx.send("Axicom: ez\nAxicom: noobs\nAxicom: uninstall\nAxicom: Lol talk to again when you're winning\nAxicom: Dont fucking stick your pleb ass words on my screen\nAxicom: Trist\nAxicom: Fucking leave")
+
+@bot.command()
+async def wags(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/439644280731205641/sasuke_v1.webm")
 
 @bot.command()
 async def info(ctx):
