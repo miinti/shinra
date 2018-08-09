@@ -7,6 +7,7 @@ import config
 try:
     import discord
     from discord.ext import commands
+    from discord.utils import get
     import asyncio
     import atexit
     import random
@@ -60,9 +61,9 @@ async def game(ctx):
 
 @bot.command()
 async def poll(ctx):
-    await ctx.bot.add_reaction(emoji="👍")
-    await ctx.bot.add_reaction(emoji="👎")
-    await ctx.bot.add_reaction(emoji="🤷‍")
+    await ctx.message.add_reaction(emoji="👍")
+    await ctx.message.add_reaction(emoji="👎")
+    await ctx.message.add_reaction(emoji="🤷‍")
 
 
 # static text and embedded response commands
@@ -117,5 +118,15 @@ async def help(ctx):
     embed.add_field(name="...", value="...", inline=False)
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
+
+## events
+
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    if 'yum' in message.content:
+        emoji = get(bot.get_all_emojis(), name = 'yum')
+        await bot.add_reaction(message, emoji)
 
 bot.run(config.TOKEN)
