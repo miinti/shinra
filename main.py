@@ -60,9 +60,9 @@ async def game(ctx):
 
 @bot.command()
 async def poll(ctx):
-    await ctx.message.add_reaction(emoji="👍")
-    await ctx.message.add_reaction(emoji="👎")
-    await ctx.message.add_reaction(emoji="🤷‍")
+    await ctx.bot.add_reaction(emoji="👍")
+    await ctx.bot.add_reaction(emoji="👎")
+    await ctx.bot.add_reaction(emoji="🤷‍")
 
 
 # static text and embedded response commands
@@ -92,7 +92,7 @@ async def luke(ctx):
 
 @bot.command(pass_context=True, no_pm=True)
 async def servico(ctx):
-    await ctx.send(f"{ctx.message.server.icon_url}")
+    await ctx.send(f"{ctx.message.guilds.icon_url}")
 
 @bot.command()
 async def info(ctx):
