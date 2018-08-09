@@ -92,7 +92,7 @@ async def luke(ctx):
 
 @bot.command(pass_context=True, no_pm=True)
 async def servico(ctx):
-    await ctx.send("{}".format(ctx.message.server.icon_url))
+    await ctx.send(f"{ctx.message.server.icon_url}")
 
 @bot.command()
 async def info(ctx):
