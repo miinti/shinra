@@ -7,6 +7,7 @@ import config
 try:
     import discord
     from discord.ext import commands
+    import asyncio
     import atexit
     import random
     from random import randint
@@ -63,15 +64,11 @@ async def poll(ctx):
     await ctx.message.add_reaction(emoji="👎")
     await ctx.message.add_reaction(emoji="🤷‍")
 
-users = await reaction.users().flatten()
-# users is now a list...
-winner = random.choice(users)
-await channel.send('{} has won the raffle.'.format(winner))
 
 # static text and embedded response commands
 @bot.command()
 async def hi(ctx):
-    await ctx.send("hey there, ", ctx.author.mention)
+    await ctx.send(f"hey there, {ctx.author.mention}.")
 
 @bot.command()
 async def tyler(ctx):
