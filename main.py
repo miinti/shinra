@@ -16,12 +16,13 @@ except:
 
 bot = commands.Bot(command_prefix='-', description='shinra is a simple bot designed for private servers.')
 client = discord.Client()
+owner = [config.MSTR]
 
 # bot logon message in console
 @bot.event
 async def on_ready():
     #await bot.change_presence(activity=discord.Game(name='with fire'))
-    await bot.change_presence(activity=discord.Activity(name='Astroworld', type=2))
+    await bot.change_presence(activity=discord.Activity(name='Slime Language', type=2))
     print('\nHello, logged in as:')
     print(bot.user.name)
     print(bot.user.id)
@@ -54,16 +55,22 @@ async def roll(ctx):
 # work in progress, will pick a random multiplayer game from an array of games
 @bot.command()
 async def game(ctx):
-    await ctx.send("this command will help us pick a game easier...when it's ready.")
+    await ctx.send("still under construction :OmegaHuh:")
+
+@bot.command()
+async def poll(ctx):
+    await ctx.message.add_reaction(emoji="👍")
+    await ctx.message.add_reaction(emoji="👎")
+    await ctx.message.add_reaction(emoji="🤷‍")
 
 # static text and embedded response commands
 @bot.command()
 async def hi(ctx):
-    await ctx.send("hey there.")
+    await ctx.send("hey there, {ctx.author.mention}.")
 
 @bot.command()
 async def tyler(ctx):
-    await ctx.send("<3")
+    await ctx.send("💜")
 
 @bot.command()
 async def rui(ctx):
@@ -80,6 +87,10 @@ async def wags(ctx):
 @bot.command()
 async def luke(ctx):
     await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 big booty god :ok_hand::weary:")
+
+@bot.command(pass_context=True, no_pm=True)
+async def servico(ctx):
+    await ctx.send("{}".format(ctx.message.server.icon_url))
 
 @bot.command()
 async def info(ctx):
@@ -99,6 +110,8 @@ async def help(ctx):
     embed.add_field(name="-ping", value="Displays the latency between the API and the client. (I need to verify this.)")
     embed.add_field(name="-roll", value="Rolls a random whole number between 0 and 100.")
     embed.add_field(name="-game", value="Picks a random multiplayer game to play. List will be regularly updated.")
+    embed.add_field(name="-poll", value="Starts a poll with three choices.")
+    embed.add_field(name="-servico", value="Returns the server icon.")
     embed.add_field(name="...", value="...", inline=False)
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
