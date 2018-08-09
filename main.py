@@ -16,7 +16,7 @@ except:
 
 bot = commands.Bot(command_prefix='-', description='shinra is a simple bot designed for private servers.')
 client = discord.Client()
-owner = [config.MSTR]
+#owner = [config.MSTR]
 
 # bot logon message in console
 @bot.event
