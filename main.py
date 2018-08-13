@@ -59,11 +59,11 @@ async def roll(ctx):
 async def game(ctx):
     await ctx.send("still under construction :OmegaHuh:")
 
-@bot.command()      #### WIP
+@bot.command()
 async def poll(ctx):
     await ctx.message.add_reaction(emoji="👍")
     await ctx.message.add_reaction(emoji="👎")
-    await ctx.message.add_reaction(emoji="🤷‍")
+    await ctx.message.add_reaction(emoji="🤷")  # still not working?
 
 
 # static text and embedded response commands
@@ -81,7 +81,7 @@ async def rui(ctx):
 
 @bot.command()
 async def ryan(ctx):
-    await ctx.send("Axicom: ez\nAxicom: noobs\nAxicom: uninstall\nAxicom: Lol talk to again when you're winning\nAxicom: Dont fucking stick your pleb ass words on my screen\nAxicom: Trist\nAxicom: Fucking leave")
+    await ctx.send("Axicom: Dont fucking stick your pleb ass words on my screen\nAxicom: Trist\nAxicom: Fucking leave")
 
 @bot.command()
 async def wags(ctx):
@@ -93,7 +93,7 @@ async def luke(ctx):
 
 @bot.command(pass_context=True, no_pm=True) ##### WIP
 async def servico(ctx):
-    await ctx.send(f"{ctx.message.guilds.icon_url}")
+    await ctx.send(f"{ctx.message.guilds.icon}")
 
 @bot.command()
 async def info(ctx):
@@ -119,5 +119,5 @@ async def help(ctx):
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
 
-    
+
 bot.run(config.TOKEN)
