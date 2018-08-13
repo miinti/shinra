@@ -59,7 +59,7 @@ async def roll(ctx):
 async def game(ctx):
     await ctx.send("still under construction :OmegaHuh:")
 
-@bot.command()
+@bot.command()      #### WIP
 async def poll(ctx):
     await ctx.message.add_reaction(emoji="👍")
     await ctx.message.add_reaction(emoji="👎")
@@ -73,7 +73,7 @@ async def hi(ctx):
 
 @bot.command()
 async def tyler(ctx):
-    await ctx.send("💜")
+    await ctx.send("<3")
 
 @bot.command()
 async def rui(ctx):
@@ -91,7 +91,7 @@ async def wags(ctx):
 async def luke(ctx):
     await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 big booty god :ok_hand::weary:")
 
-@bot.command(pass_context=True, no_pm=True)
+@bot.command(pass_context=True, no_pm=True) ##### WIP
 async def servico(ctx):
     await ctx.send(f"{ctx.message.guilds.icon_url}")
 
@@ -119,14 +119,5 @@ async def help(ctx):
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
 
-## events
-
-@bot.event
-async def on_message(message):
-    if message.author == bot.user:
-        return
-    if 'yum' in message.content:
-        emoji = get(bot.get_all_emojis(), name = 'yum')
-        await bot.add_reaction(message, emoji)
-
+    
 bot.run(config.TOKEN)
