@@ -57,13 +57,13 @@ async def roll(ctx):
 # work in progress, will pick a random multiplayer game from an array of games
 @bot.command()
 async def game(ctx):
-    await ctx.send("still under construction :OmegaHuh:")
+    await ctx.send("still under construction :angry:")
 
 @bot.command()
 async def poll(ctx):
     await ctx.message.add_reaction(emoji="👍")
     await ctx.message.add_reaction(emoji="👎")
-    #await ctx.message.add_reaction(emoji="🤷")  # still not working?
+    await ctx.message.add_reaction(emoji="🤷")
 
 
 # static text and embedded response commands
@@ -90,11 +90,6 @@ async def wags(ctx):
 @bot.command()
 async def luke(ctx):
     await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 big booty god :ok_hand::weary:")
-
-@bot.command(pass_context=True, no_pm=True) ##### WIP
-async def servico(ctx):
-    await ctx.send("under construction")
-#    await ctx.send(f"{ctx.message.guilds.icon}")
 
 @bot.command()
 async def info(ctx):
