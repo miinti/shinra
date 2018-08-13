@@ -63,7 +63,7 @@ async def game(ctx):
 async def poll(ctx):
     await ctx.message.add_reaction(emoji="👍")
     await ctx.message.add_reaction(emoji="👎")
-    await ctx.message.add_reaction(emoji="🤷")  # still not working?
+    #await ctx.message.add_reaction(emoji="🤷")  # still not working?
 
 
 # static text and embedded response commands
@@ -93,7 +93,8 @@ async def luke(ctx):
 
 @bot.command(pass_context=True, no_pm=True) ##### WIP
 async def servico(ctx):
-    await ctx.send(f"{ctx.message.guilds.icon}")
+    await ctx.send("under construction")
+#    await ctx.send(f"{ctx.message.guilds.icon}")
 
 @bot.command()
 async def info(ctx):
