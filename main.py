@@ -16,7 +16,7 @@ except:
     print("Please install the discord.py rewrite API.")
     exit(-1)
 
-bot = commands.Bot(command_prefix='-', description='shinra is a simple bot designed for private servers.')
+bot = commands.Bot(command_prefix='-', description='shinra is a simple bot designed for private use.')
 client = discord.Client()
 #owner = [config.MSTR]
 
@@ -89,23 +89,23 @@ async def wags(ctx):
 
 @bot.command()
 async def luke(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 big booty god :ok_hand::weary:")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 \nbig booty god :ok_hand::weary:")
 
 @bot.command()
 async def mike(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778276370972672/IMG_20170823_010140.jpg the shield cannot hold")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778276370972672/IMG_20170823_010140.jpg \nthe shield cannot hold")
 
 @bot.command()
 async def brandon(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478776733194125322/my_boi.png dude ur wrong")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478776733194125322/my_boi.png \ndude ur wrong")
 
 @bot.command()
 async def neverforget(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778047844188190/IMG_0336.PNG the sun will shine on us again brother")    
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778047844188190/IMG_0336.PNG \nwho's king drinker of the house?")    
 
 @bot.command()
 async def info(ctx):
-    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private servers. this bot is a WIP.", color=0xe91e63)
+    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private use. this bot is a WIP.", color=0xe91e63)
 
     embed.add_field(name="Author", value="Miinti#5774 (ty i.)")
     embed.add_field(name="Member of", value=f"{len(bot.guilds)} server(s).")
@@ -114,7 +114,7 @@ async def info(ctx):
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private servers.", color=0x71368a)
+    embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private use.", color=0x71368a)
 
     embed.add_field(name="-help", value="Shows this message.", inline=False)
     embed.add_field(name="-info", value="Shows some brief information about shinra.", inline=False)
@@ -122,7 +122,6 @@ async def help(ctx):
     embed.add_field(name="-roll", value="Rolls a random whole number between 0 and 100.")
     embed.add_field(name="-game", value="Picks a random multiplayer game to play. List will be regularly updated.")
     embed.add_field(name="-poll", value="Starts a poll with three choices.")
-    embed.add_field(name="-servico", value="Returns the server icon.")
     embed.add_field(name="...", value="...", inline=False)
     embed.add_field(name="expansion coming soon.", value="this help list is a WIP and will be expanded in the future. shinra has hidden commands outside of this list.")
     await ctx.send(embed=embed)
