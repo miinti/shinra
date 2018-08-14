@@ -92,6 +92,18 @@ async def luke(ctx):
     await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/475428109835960340/ips-78B912CF-D727-4D93-A429-4B4FF6CC16D8.mp4 big booty god :ok_hand::weary:")
 
 @bot.command()
+async def mike(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778276370972672/IMG_20170823_010140.jpg the shield cannot hold")
+
+@bot.command()
+async def brandon(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478776733194125322/my_boi.png dude ur wrong")
+
+@bot.command()
+async def neverforget(ctx):
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778047844188190/IMG_0336.PNG the sun will shine on us again brother")    
+
+@bot.command()
 async def info(ctx):
     embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private servers. this bot is a WIP.", color=0xe91e63)
 
