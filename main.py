@@ -93,7 +93,7 @@ async def luke(ctx):
 
 @bot.command()
 async def mike(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778276370972672/IMG_20170823_010140.jpg \nthe shield cannot hold")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/490224513737293844/video.mov")
 
 @bot.command()
 async def brandon(ctx):
