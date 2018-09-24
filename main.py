@@ -77,11 +77,11 @@ async def tyler(ctx):
 
 @bot.command()
 async def rui(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478775388009398293/aosjdn.jpg")
+    await ctx.send("https://i.imgur.com/aHfuPXJ.jpg")
 
 @bot.command()
 async def ryan(ctx):
-    await ctx.send("Axicom: Dont fucking stick your pleb ass words on my screen\nAxicom: Trist\nAxicom: Fucking leave\n https://cdn.discordapp.com/attachments/273527780438704129/478777703315668992/image.png")
+    await ctx.send("Axicom: Dont fucking stick your pleb ass words on my screen \nhttps://i.imgur.com/yfeOGuI.jpg")
 
 @bot.command()
 async def wags(ctx):
@@ -97,11 +97,11 @@ async def mike(ctx):
 
 @bot.command()
 async def brandon(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478776733194125322/my_boi.png \nhttps://cdn.discordapp.com/attachments/273527780438704129/493568720602529802/voicemail-43.m4a")
+    await ctx.send("https://www.youtube.com/watch?v=Px5gRTDxZFE")
 
 @bot.command()
 async def neverforget(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478778047844188190/IMG_0336.PNG \nwho's king drinker of the house?")    
+    await ctx.send("https://i.imgur.com/HYTtziv.jpg \nwho's king drinker of the house?")    
 
 @bot.command()
 async def info(ctx):
