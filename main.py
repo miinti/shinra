@@ -24,7 +24,7 @@ client = discord.Client()
 @bot.event
 async def on_ready():
     #await bot.change_presence(activity=discord.Game(name='with fire'))
-    await bot.change_presence(activity=discord.Activity(name='Bandana', type=2))
+    await bot.change_presence(activity=discord.Activity(name='DROGAS WAVE', type=2))
     print('\nHello, logged in as:')
     print(bot.user.name)
     print(bot.user.id)
@@ -77,7 +77,7 @@ async def tyler(ctx):
 
 @bot.command()
 async def rui(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478775388009398293/aosjdn.jpg https://cdn.discordapp.com/attachments/247429693026861056/475437160833482762/434036_1.jpg")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478775388009398293/aosjdn.jpg")
 
 @bot.command()
 async def ryan(ctx):
