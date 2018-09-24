@@ -97,7 +97,7 @@ async def mike(ctx):
 
 @bot.command()
 async def brandon(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478776733194125322/my_boi.png \ndude ur wrong")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/478776733194125322/my_boi.png \nhttps://cdn.discordapp.com/attachments/273527780438704129/493568720602529802/voicemail-43.m4a")
 
 @bot.command()
 async def neverforget(ctx):
