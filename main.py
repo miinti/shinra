@@ -69,7 +69,7 @@ async def poll(ctx):
 async def ask(ctx):
     await ctx.send("coming soon.")
 
-@bot.command
+@bot.command()
 async def say(ctx, msg: str):
     await ctx.send(msg)
 
