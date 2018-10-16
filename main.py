@@ -65,6 +65,14 @@ async def poll(ctx):
     await ctx.message.add_reaction(emoji="👎")
     await ctx.message.add_reaction(emoji="🤷")
 
+@bot.command()
+async def ask(ctx):
+    await ctx.send("coming soon.")
+
+@bot.command
+async def say(ctx, msg: str):
+    await ctx.send(msg)
+
 
 # static text and embedded response commands
 @bot.command()
