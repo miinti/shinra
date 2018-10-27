@@ -67,8 +67,7 @@ async def poll(ctx):
 
 @bot.command()
 async def ask(ctx):
-    await ctx.send("coming soon.")
-    resp = ["ask me again and i'll kill you", "yeah sure", "not at all", "yes", "yeah", "no", "nope", "dude fuck off", "you're funny"]
+    resp = ["ask me again and i'll kill you", "yeah sure", "not at all", "yes", "yeah", "no", "nope", "dude fuck off", "you're funny", "ask brandon he'll tell you", "ask wags he'll tell you", "ask a smarter question"]
     await ctx.send(random.choice(resp))
 
 @bot.command(pass_context = True)
