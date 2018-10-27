@@ -68,6 +68,8 @@ async def poll(ctx):
 @bot.command()
 async def ask(ctx):
     await ctx.send("coming soon.")
+    resp = ["ask me again and i'll kill you", "yeah sure", "not at all", "yes", "yeah", "no", "nope", "dude fuck off", "you're funny"]
+    await ctx.send(random.choice(resp))
 
 @bot.command(pass_context = True)
 async def say(ctx, *args):
@@ -83,7 +85,7 @@ async def hi(ctx):
 
 @bot.command()
 async def tyler(ctx):
-    await ctx.send("<3")
+    await ctx.send("💜")
 
 @bot.command()
 async def rui(ctx):
