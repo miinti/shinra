@@ -24,7 +24,7 @@ client = discord.Client()
 @bot.event
 async def on_ready():
     #await bot.change_presence(activity=discord.Game(name='with fire'))
-    await bot.change_presence(activity=discord.Activity(name='DROGAS WAVE', type=2))
+    await bot.change_presence(activity=discord.Activity(name='Tha Carter V', type=2))
     print('\nHello, logged in as:')
     print(bot.user.name)
     print(bot.user.id)
@@ -69,9 +69,11 @@ async def poll(ctx):
 async def ask(ctx):
     await ctx.send("coming soon.")
 
-@bot.command()
-async def say(ctx, msg: str):
-    await ctx.send(msg)
+@bot.command(pass_context = True)
+async def say(ctx, *args):
+    msg = ' '.join(args)
+    await ctx.delete_message(ctx.message)
+    return await ctx.say(msg)
 
 
 # static text and embedded response commands
