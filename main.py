@@ -75,7 +75,7 @@ async def ask(ctx):
 @bot.command(pass_context = True)
 async def say(ctx, *args):
     msg = ' '.join(args)
-    #await ctx.delete_message(ctx.message)
+    await ctx.delete_message(ctx.message)
     await ctx.send(msg)
 
 
