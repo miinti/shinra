@@ -24,7 +24,7 @@ client = discord.Client()
 @bot.event
 async def on_ready():
     #await bot.change_presence(activity=discord.Game(name='with fire'))
-    await bot.change_presence(activity=discord.Activity(name='Fetti', type=2))
+    await bot.change_presence(activity=discord.Activity(name='DiCaprio 2 by JID', type=2))
     print('\nHello, logged in as:')
     print(bot.user.name)
     print(bot.user.id)
