@@ -86,7 +86,7 @@ async def hi(ctx):
 
 @bot.command()
 async def tyler(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/551587949557448704/image.png")
+    await ctx.send("https://cdn.discordapp.com/attachments/273527780438704129/551606727540473876/tyler.jpg")
 
 @bot.command()
 async def rui(ctx):
