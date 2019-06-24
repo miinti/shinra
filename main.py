@@ -1,5 +1,5 @@
 # shinra - a simple discord bot
-# created by Miinti#5774
+# created by Miinti#0101 (for now)
 # some base code taken from boostlog and other sources.
 
 import config
@@ -24,7 +24,7 @@ client = discord.Client()
 @bot.event
 async def on_ready():
     #await bot.change_presence(activity=discord.Game(name='with fire'))
-    await bot.change_presence(activity=discord.Activity(name='ZUU by Denzel Curry', type=2))
+    await bot.change_presence(activity=discord.Activity(name='Bandana by Freddie Gibbs & Madlib', type=2))
     print('\nHello, logged in as:')
     print(bot.user.name)
     print(bot.user.id)
@@ -120,9 +120,9 @@ async def neverforget(ctx):
 async def info(ctx):
     embed = discord.Embed(title="shinra.", description="a simple bot for simple tasks. designed for private use. this bot is a WIP.", color=0xe91e63)
 
-    embed.add_field(name="Author", value="Miinti#5774 (ty i.)")
+    embed.add_field(name="Author", value="Miinti#0101 (ty i.)")
     embed.add_field(name="Member of", value=f"{len(bot.guilds)} server(s).")
-    embed.add_field(name="Interested?", value="Contact Miinti#5774 for info.")
+    embed.add_field(name="Interested?", value="Contact Miinti#0101 for info.")
     await ctx.send(embed=embed)
 
 @bot.command()
